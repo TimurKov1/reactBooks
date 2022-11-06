@@ -1,0 +1,9 @@
+.main__genres {
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.main__books {
+    min-width: calc(75% - 20px);
+    max-width: calc(75% - 20px);
+}

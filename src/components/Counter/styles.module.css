@@ -1,0 +1,24 @@
+.counter__text {
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 25px;
+}
+
+.counter__button {
+    color: #fff;
+    min-height: 38px;
+    max-height: 38px;
+    min-width: 38px;
+    max-width: 38px;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: #000;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.counter__button:disabled {
+    background-color: rgba(0, 0, 0, 0.5);
+}

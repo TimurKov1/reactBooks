@@ -1,0 +1,31 @@
+.nav {
+    background-color: #fff;
+    border-radius: 8px;
+    min-height: calc(100vh - 170px);
+    max-height: calc(100vh - 170px);
+}
+
+.nav__body {
+    padding: 20px;
+    margin: 0;
+}
+
+.nav__item {
+    list-style-type: none;
+}
+
+.nav__itemText {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.nav__itemTextActive {
+    font-weight: 700;
+}

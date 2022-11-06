@@ -1,0 +1,16 @@
+.main__flexBlock {
+    display: flex;
+}
+
+.main__book {
+    min-width: calc(50% - 40px);
+    max-width: calc(50% - 40px);
+}
+
+.main__description {
+    min-width: calc(50% - 60px);
+    max-width: calc(50% - 60px);
+    min-height: 215px;
+    max-height: 215px;
+    margin-left: 20px;
+}

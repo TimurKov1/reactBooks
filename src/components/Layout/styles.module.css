@@ -1,0 +1,27 @@
+.header {
+    background-color: #000;
+    min-width: calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    min-height: 30px;
+    max-height: 30px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main {
+    background-color: #E9E9E9;
+    padding: 0 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}

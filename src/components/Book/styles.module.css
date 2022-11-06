@@ -1,0 +1,42 @@
+.book {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-bottom: 15px
+}
+
+.book__name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.book__description {
+    margin: 30px 0;
+}
+
+.book__review, .book__author, .book__genre {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 7px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.book__price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.book_center {
+    align-items: center;
+}
+
+.book_bottom {
+    align-items: flex-end;
+}
+
+.counter_bottom {
+    padding-bottom: 1.25rem;
+}

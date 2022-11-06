@@ -1,0 +1,12 @@
+.books {
+    margin-left: 20px;
+}
+
+.books__body {
+    padding: 0;
+    margin: 0;
+}
+
+.books__item {
+    list-style-type: none;
+}

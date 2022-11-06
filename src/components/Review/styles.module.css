@@ -1,0 +1,23 @@
+.review__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__author, .review__amount {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+.review__amount {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+.reviews__body {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.reviews__item {
+    list-style-type: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+}
