@@ -1,5 +1,5 @@
 import { BooksPage } from "./pages/BooksPage/BooksPage";
-import { BookPage } from "./pages/BookPage/BookPage";
+// import { BookPage } from "./pages/BookPage/BookPage";
 import { genres } from "./constants/mock";
 import styles from "./styles.module.css";
 import { Header } from "./components/Header/Header";

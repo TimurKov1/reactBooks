@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import classnames from 'classnames'
+import classnames from 'classnames';
 
 export const Genres = ({genres, func, activeGenre, className}) => {
     return (
@@ -12,5 +12,5 @@ export const Genres = ({genres, func, activeGenre, className}) => {
                 }
             </ul>
         </nav>
-    )
-}
+    );
+};

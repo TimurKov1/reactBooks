@@ -25,3 +25,6 @@ export const Counter = React.memo(({ className }) => {
     </div>
   );
 });
+
+
+Counter.displayName = 'Counter';
