@@ -40,3 +40,12 @@
 .counter_bottom {
     padding-bottom: 1.25rem;
 }
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

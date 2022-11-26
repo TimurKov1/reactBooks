@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .text {
     font-style: normal;
     font-weight: 700;

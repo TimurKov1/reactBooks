@@ -1,17 +1,25 @@
 import { BooksPage } from "./pages/BooksPage/BooksPage";
-// import { BookPage } from "./pages/BookPage/BookPage";
-import { genres } from "./constants/mock";
+import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
+import { BookPage } from "./pages/BookPage/BookPage";
 import styles from "./styles.module.css";
 import { Header } from "./components/Header/Header";
+import { store } from "./store";
+import { Provider } from "react-redux";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export function App() {
   return (
-    <>
-      <Header />
-      <main className={styles.main}>
-        {/* <BookPage book={genres[0].books[0]}/> */}
-        <BooksPage genres={genres} />
-      </main>
-    </>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+        <main className={styles.main}>
+            <Routes>
+              <Route index element={<BooksPage />} />
+              <Route path=":bookId" element={<BookPage />} />
+              <Route path="*" element={<NotFoundPage />}/>
+            </Routes>
+        </main>
+      </BrowserRouter>
+    </Provider>
   );
 }

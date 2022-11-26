@@ -1,14 +1,24 @@
+import { useSelector } from "react-redux";
+import { selectBookById } from "../../store/book/selectors";
+import { useParams } from "react-router-dom";
 import { Book } from "../../components/Book/Book";
 import { Description } from "../../components/Description/Description";
 import { Reviews } from "../../components/Reviews/Reviews";
 import styles from "./styles.module.css";
 
-export const BookPage = ({ book }) => {
+export const BookPage = () => {
+  const { bookId } = useParams();
+  const book = useSelector(state => selectBookById(state, bookId));
+  
+  if (!book) {
+    return null;
+  }
+
   return (
     <>
       <div className={styles.main__flexBlock}>
-        <Book position={"bottom"} className={styles.main__book} book={book} />
-        <Description className={styles.main__description} book={book} />
+        <Book position={"bottom"} className={styles.main__book} bookId={bookId} />
+        <Description className={styles.main__description} description={book.description} />
       </div>
       <Reviews reviews={book.reviews} />
     </>
