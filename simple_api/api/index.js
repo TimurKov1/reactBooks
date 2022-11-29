@@ -36,7 +36,12 @@ router.get("/reviews", (req, res, next) => {
 });
 
 router.get("/users", (req, res, next) => {
-  reply(res, users);
+  const { userId } = req.query;
+  let user = users;
+  if (userId) {
+    user = getById(users)(userId);
+  }
+  reply(res, user);
 });
 
 module.exports = router;

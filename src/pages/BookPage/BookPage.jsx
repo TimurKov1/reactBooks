@@ -15,12 +15,12 @@ export const BookPage = () => {
   }
 
   return (
-    <>
+    <div>
       <div className={styles.main__flexBlock}>
         <Book position={"bottom"} className={styles.main__book} bookId={bookId} />
         <Description className={styles.main__description} description={book.description} />
       </div>
-      <Reviews reviews={book.reviews} />
-    </>
+      <Reviews bookId={bookId} />
+    </div>
   );
 };
