@@ -12,11 +12,11 @@ export const CartBooks = ({ books }) => {
   return (
     <section className={styles.books}>
         <ul className={styles.books__body}>
-            {books_data.map((id) => (
+            {books ? books_data.map((id) => (
                 <li className={styles.books__item} key={id}>
                     <Book position="center" bookId={id} />
                 </li>
-            ))}
+            )) : null}
         </ul>
     </section>
   );

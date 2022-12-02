@@ -12,21 +12,20 @@ export const Order = ({ books }) => {
       books_data.push(book);
     }
   });
-  console.log(books_data);
 
   return (
     <section className={styles.order}>
       <div className={styles.order__body}>
         <h3 className={styles.order__title}>Ваш заказ:</h3>
         <ul className={styles.order__items}>
-          {books_data.map((book) => (
+          {books ? books_data.map((book) => (
             <li className={styles.order__item} key={book.id}>
               <h4 className={styles.order__itemName}>{book.name}</h4>
               <h4 className={styles.order__itemPrice}>
                 {books[book.id]} x {book.price} ₽
               </h4>
             </li>
-          ))}
+          )) : null}
         </ul>
       </div>
       <div className={styles.order__footer}>

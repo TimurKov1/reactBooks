@@ -12,7 +12,7 @@ export const Counter = React.memo(({ className, bookId }) => {
     <div className={classnames(styles.counter, className)}>
       <button
         className={styles.counter__button}
-        onClick={() => dispatch(cartSlice.actions.removeFilm(bookId))}
+        onClick={() => dispatch(cartSlice.actions.removeBook(bookId))}
         disabled={count === 0}
       >
         -
@@ -20,7 +20,7 @@ export const Counter = React.memo(({ className, bookId }) => {
       <span className={styles.counter__text}>{count || 0}</span>
       <button
         className={styles.counter__button}
-        onClick={() => dispatch(cartSlice.actions.addFilm(bookId))}
+        onClick={() => dispatch(cartSlice.actions.addBook(bookId))}
         disabled={count === 10}
       >
         +

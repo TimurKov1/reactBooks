@@ -41,7 +41,7 @@ router.get("/users", (req, res, next) => {
   if (userId) {
     user = getById(users)(userId);
   }
-  reply(res, user);
+  reply(res, users);
 });
 
 module.exports = router;

@@ -1,15 +1,12 @@
 import { userSlice } from ".";
+import { prepareData } from "../utils";
 
-export const loadUsersIfNotExist = (userId) => (dispatch) => {
+export const loadUsersIfNotExist = (dispatch) => {
   dispatch(userSlice.actions.startLoading());
-  fetch(`http://localhost:3001/api/users?userId=${userId}`)
+  fetch(`http://localhost:3001/api/users`)
     .then((responce) => responce.json())
-    .then((user) => {
-      const result = {
-        entities: user,
-        ids: user.id
-      };
-      dispatch(userSlice.actions.successLoading(result));
+    .then((users) => {
+      dispatch(userSlice.actions.successLoading(prepareData(users)));
     })
     .catch(() => {
       dispatch(userSlice.actions.failLoading());

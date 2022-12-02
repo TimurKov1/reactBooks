@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import { selectBooks } from "../../store/cart/selectors";
+import { selectCartModule } from "../../store/cart/selectors";
 import { CartBooks } from "../../components/CartBooks/CartBooks";
 import { Order } from "../../components/Order/Order";
 
 export const CartPage = () => {
-    const books = useSelector(state => selectBooks(state));
+    const books = useSelector(state => selectCartModule(state));
 
     if (!books) {
         return null;
@@ -12,8 +12,8 @@ export const CartPage = () => {
 
     return (
         <>
-            {books && <Order books={books} />}
-            {books && <CartBooks books={books} />}
+            <Order books={books} />
+            <CartBooks books={books} />
         </>
     );
 };

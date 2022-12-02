@@ -1,4 +1,4 @@
 export const selectUserModule = (state) => state.user;
 
-export const selectUser = (state) =>
-  Object.values(selectUserModule(state).entities);
+export const selectUsers = (state) =>
+  selectUserModule(state).entities;
